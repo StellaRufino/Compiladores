@@ -13,7 +13,7 @@ all: build
 build: $(EXE)
 
 $(EXE): $(OBJ)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $(LDFLAGS) $^ -o $@ 
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
